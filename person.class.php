@@ -35,6 +35,6 @@ class Person
 
     public function toString()
     {
-        return "$this->first_name" . "$this->last_name";
+        return "Name: $this->first_name " . "$this->last_name";
     }
 }
