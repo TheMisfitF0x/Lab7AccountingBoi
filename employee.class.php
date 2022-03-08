@@ -6,6 +6,7 @@
  * File: employee.class.php
  * Description:
  */
+require_once "payable.class.php";
 abstract class Employee implements Payable
 {
     private $person;
