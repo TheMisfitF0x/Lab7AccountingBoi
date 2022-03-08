@@ -1,5 +1,13 @@
 <?php
+/**
+ * Author: Logan Douglass
+ * Date: 3/8/2022
+ * File: invoice.class.php
+ * Description: Responsible for attributes and methods related to invoices.
+ */
+//Imports
 require_once 'payable.class.php';
+
 class Invoice implements Payable
 {
     //Attributes
@@ -34,7 +42,7 @@ class Invoice implements Payable
     public function getPricePerItem(){
         return $this->price_per_item;
     }
-    
+
     public function getPaymentAmount()
     {
         return $this->price_per_item * $this->quantity;
