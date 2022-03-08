@@ -29,6 +29,6 @@ class Invoice implements Payable
     }
 
     public function getPricePerItem(){
-        return $this->getPricePerItem();
+        return $this->price_per_item();
     }
 }
