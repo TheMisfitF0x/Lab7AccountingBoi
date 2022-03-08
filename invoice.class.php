@@ -12,7 +12,7 @@ class Invoice implements Payable
         $this->part_number = $part_number;
         $this->part_description = $part_description;
         $this->quantity = $quantity;
-        $this->price_per_item;
+        $this->price_per_item = $price_per_item;
         self::$invoice_count++;
     }
 
