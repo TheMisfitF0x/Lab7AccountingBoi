@@ -42,6 +42,7 @@ class HourlyEmployee extends Employee
     }
 
     public function toString(){
+        parent::toString();
         return("Total Hours: " . $this->getHours() . "Current Wage: " . $this->getWage() . " Payment Amount: " .  $this->getPaymentAmount());
     }
 
