@@ -9,10 +9,14 @@
 require_once "payable.class.php";
 abstract class Employee implements Payable
 {
+    //Attributes of all employees
     private $person;
     private $ssn;
+
+    //Count of all employees.
     private static $employee_count;
 
+    //constructor
     private function __construct($person, $ssn)
     {
         $this->person = $person;
@@ -26,7 +30,7 @@ abstract class Employee implements Payable
     }
 
     /**
-     * @return mixed
+     * @return ssn
      */
     public function getSSN()
     {
@@ -34,13 +38,14 @@ abstract class Employee implements Payable
     }
 
     /**
-     * @return mixed
+     * @return number of employees
      */
     public static function getEmployeeCount()
     {
         return self::$employee_count;
     }
 
+    //Implemented by child classes
     abstract public function getPaymentAmount();
 
     public function toString() {
