@@ -39,6 +39,14 @@ class Invoice implements Payable
 
     public function toString()
     {
-        // TODO: Implement toString() method.
+        return ("Part Number: " + $this->part_number +
+            " Part Description: " + $this->part_description +
+            " Quantity: " + $this->quantity +
+            " Price Per Item: " + $this->price_per_item +
+            " Payment Amount: " + $this->getPaymentAmount());
+    }
+
+    public static function getInvoiceCount(){
+        return self::$invoice_count;
     }
 }
