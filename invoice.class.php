@@ -31,4 +31,14 @@ class Invoice implements Payable
     public function getPricePerItem(){
         return $this->price_per_item();
     }
+
+    public function getPaymentAmount()
+    {
+        return $this->price_per_item * $this->quantity;
+    }
+
+    public function toString()
+    {
+        // TODO: Implement toString() method.
+    }
 }
