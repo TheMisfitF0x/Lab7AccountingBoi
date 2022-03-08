@@ -4,7 +4,7 @@
  * Author:Evan Minor
  * Date: 3/8/2022
  * File: commissionemployee.php
- * Description:
+ * Description: This will calculate how much
  */
 class CommissionEmployee extends Employee
 {
@@ -28,6 +28,11 @@ class CommissionEmployee extends Employee
 
     public function getPaymentAmount(){
         return ($this->sales * $this->commission_rate);
+    }
+
+    public function toString()
+    {
+        return "$this->sales". "$this->commission_rate";
     }
 
 
