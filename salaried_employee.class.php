@@ -6,6 +6,7 @@
  * Description:
  */
 require_once "employee.class.php";
+
 class SalariedEmployee extends Employee
 {
     //private variable for employee salary

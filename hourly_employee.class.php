@@ -5,7 +5,7 @@
  * File: hourly_employee.class.php
  * Description:
  */
-require 'employee.class.php';
+require_once 'employee.class.php';
 
 class HourlyEmployee extends Employee
 {
