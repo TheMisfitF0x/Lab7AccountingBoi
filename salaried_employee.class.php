@@ -24,7 +24,8 @@ class SalariedEmployee extends Employee
     }
 
     public function toString(){
-
+        parent::toString();
+        return("Weekly Salary: " . $this->getWeeklySalary() . " Payment Amount: " . $this->getPaymentAmount());
     }
 
 }

@@ -32,9 +32,9 @@ class HourlyEmployee extends Employee
             $regularHours = 40;
 
             $overtimePay = $overtimeHours * $this->wage * 1.5;
-            $regularPayrate = $regularHours * $this->wage;
+            $regularPayRate = $regularHours * $this->wage;
 
-            return $overtimePay + $regularPayrate;
+            return $overtimePay + $regularPayRate;
         }else{
             return $this->hours * $this->wage;
         }
@@ -42,7 +42,8 @@ class HourlyEmployee extends Employee
     }
 
     public function toString(){
-
+        parent::toString();
+        return("Total Hours: " . $this->getHours() . "Current Wage: " . $this->getWage() . " Payment Amount: " .  $this->getPaymentAmount());
     }
 
 
