@@ -16,8 +16,9 @@ abstract class Employee implements Payable
     //Count of all employees.
     private static $employee_count;
 
+
     //constructor
-    private function __construct($person, $ssn)
+    protected function __construct($person, $ssn)
     {
         $this->person = $person;
         $this->ssn = $ssn;

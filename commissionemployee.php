@@ -4,9 +4,9 @@
  * Author:Evan Minor
  * Date: 3/8/2022
  * File: commissionemployee.php
- * Description:
+ * Description: This will calculate how much
  */
-class CommissionEmployee
+class CommissionEmployee extends Employee
 {
     //declaring Private Variables
     private $sales;
@@ -28,6 +28,11 @@ class CommissionEmployee
 
     public function getPaymentAmount(){
         return ($this->sales * $this->commission_rate);
+    }
+
+    public function toString()
+    {
+        return "$this->sales". "$this->commission_rate";
     }
 
 
