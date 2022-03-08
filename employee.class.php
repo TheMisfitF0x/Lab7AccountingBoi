@@ -44,7 +44,7 @@ abstract class Employee implements Payable
     abstract public function getPaymentAmount();
 
     public function toString() {
-        return $this->person->toString() . "SSN: $this->ssn ";
+        return $this->person->toString() . "<br>SSN: $this->ssn ";
     }
 
 }
