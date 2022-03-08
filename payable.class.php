@@ -3,5 +3,5 @@
 interface Payable
 {
     public function getPaymentAmount();
-    publci function toString();
+    public function toString();
 }
