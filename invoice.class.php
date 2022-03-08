@@ -1,5 +1,5 @@
 <?php
-
+require_once 'payable.class.php';
 class Invoice implements Payable
 {
     private $part_number;
