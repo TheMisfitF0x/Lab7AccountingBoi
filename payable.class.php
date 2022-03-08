@@ -1,6 +1,7 @@
 <?php
 
-class Payable
+interface Payable
 {
-
+    public function getPaymentAmount();
+    publci function toString();
 }
