@@ -6,7 +6,7 @@
  * File: commissionemployee.php
  * Description:
  */
-class CommissionEmployee
+class CommissionEmployee extends Employee
 {
     //declaring Private Variables
     private $sales;
