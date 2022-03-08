@@ -5,17 +5,21 @@
  * File: hourly_employee.class.php
  * Description:
  */
+require 'employee.class.php';
 
 class HourlyEmployee extends Employee
 {
+    //private variables for each employee
     private $wage;
     private $hours;
 
-    public function __construct($wage,$hours){
+    //constructor for each object
+    public function __construct($person, $ssn,$wage,$hours){
+        parent::__construct($person, $ssn);
         $this->wage = $wage;
         $this->hours = $hours;
     }
-
+    // getters for wage and hours
     public function getWage()
     {
         return $this->wage;
@@ -26,6 +30,7 @@ class HourlyEmployee extends Employee
         return $this->hours;
     }
 
+    //function for retrieving payment amount for employee, employee's over 40 hours receive 1.5x rate.
     public function getPaymentAmount(){
         if($this->hours > 40){
             $overtimeHours = $this->hours - 40;
@@ -41,6 +46,7 @@ class HourlyEmployee extends Employee
 
     }
 
+    //prints all as a single string
     public function toString(){
         parent::toString();
         return("Total Hours: " . $this->getHours() . "Current Wage: " . $this->getWage() . " Payment Amount: " .  $this->getPaymentAmount());

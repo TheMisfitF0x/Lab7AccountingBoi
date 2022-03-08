@@ -2,7 +2,7 @@
 /**
  * Author: Isaac Lowe
  * Date: 3/8/2022
- * File: test_playable.php
+ * File: test_payable.php
  * Description:
  */
 
