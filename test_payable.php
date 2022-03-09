@@ -22,7 +22,7 @@ $invoice2 = new Invoice(4532, "apple", 5, 3.76);
 //Employee's for employee and person portion of objects.
 $p1 = new Person("Isaac","Lowe");
 $employee1 = new HourlyEmployee($p1,2131,8.5,50);
-$employee2 = new SalariedEmployee($p1,2131,8.5);
+$employee2 = new SalariedEmployee($p1,2131,500.0);
 
 //need further implemntation, not working.
 //$employee3 = new CommissionEmployee($p1,2131,6.5,132);

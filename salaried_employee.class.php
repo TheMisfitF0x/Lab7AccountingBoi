@@ -32,7 +32,7 @@ class SalariedEmployee extends Employee
     //Prints all variables as a singular string
     public function toString(){
         parent::toString();
-        return("Weekly Salary: " . $this->getWeeklySalary() . "<br> Payment Amount: " . $this->getPaymentAmount());
+        return("Weekly Salary: $" .  number_format($this->getWeeklySalary(),2) . "<br> Payment Amount: $" .  number_format($this->getPaymentAmount(),2));
     }
 
 }
