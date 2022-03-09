@@ -32,9 +32,9 @@ $employee2 = new SalariedEmployee($p1,2131,500.0);
 
 echo "Invoice 1:<br>" . $invoice1->toString();
 
-echo "<br><br>Employee1:<br>" . $employee1->toString();
-echo "<br><br>Employee2:<br>" . $employee2->toString();
-//echo "<br><br>Employee3:<br>" . $employee3->toString();
-//echo "<br><br>Employee4:<br>" . $employee4->toString();
+echo "<br><br>Employee 1:<br>" . $employee1->toString();
+echo "<br><br>Employee 2:<br>" . $employee2->toString();
+//echo "<br><br>Employee 3:<br>" . $employee3->toString();
+//echo "<br><br>Employee 4:<br>" . $employee4->toString();
 
 //echo Invoice::getInvoiceCount();
