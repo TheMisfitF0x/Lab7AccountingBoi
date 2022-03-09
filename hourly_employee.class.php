@@ -49,7 +49,7 @@ class HourlyEmployee extends Employee
     //prints all as a single string
     public function toString(){
         parent::toString();
-        return("Total Hours: " . $this->getHours() . "Current Wage: " . $this->getWage() . " Payment Amount: " .  $this->getPaymentAmount());
+        return("Total Hours: " . $this->getHours() . "<br>Current Wage: " . $this->getWage() . " <br>Payment Amount: " .  $this->getPaymentAmount());
     }
 
 

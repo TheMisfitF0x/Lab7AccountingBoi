@@ -6,6 +6,7 @@
  * File: commissionemployee.php
  * Description: This will calculate how much
  */
+require_once 'employee.class.php';
 class CommissionEmployee extends Employee
 {
     //declaring Private Variables
